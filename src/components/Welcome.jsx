@@ -17,7 +17,7 @@ export default function Welcome() {
                 </div>
                 <div className="md:w-1/2 space-y-6">
                     <h1 className="text-4xl font-bold text-gray-400">
-                        WELCOME WE <span className="text-gray-800">ARE MONOLIT</span>
+                        WELCOME WE <span className="text-gray-800">ARE CURVEANGLE</span>
                     </h1>
                     <div className="space-y-4">
                         <p className="text-gray-600">

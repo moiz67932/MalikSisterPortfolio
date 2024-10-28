@@ -10,7 +10,7 @@ import Welcome from "@/components/Welcome";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-CodeLight">
       <SideBarSocialMedia />
       <Header />
       <Hero />

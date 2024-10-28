@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Hero({
     heading = "CurveAngle",
     intro = "Curving Boudaries, Angle of Vision",
-    backgroundImage = "/Images/Bannerbg.jpg"
+    backgroundImage = "/Images/Bannerbg2.jpg"
 }) {
     return (
         <div className="relative h-[80vh] min-h-[400px] flex items-center justify-left pl-[12%] overflow-hidden">
