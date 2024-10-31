@@ -25,5 +25,14 @@ html {
 }
 @font-face {
   font-family: "codelight";
-  src: url(/public/Fonts/CODE\ Bold.otf);
+  src: url(/public/Fonts/CODE\ Bold.otf) format("otf");
+}
+@font-face {
+  font-family: poppinExtraLight;
+  src: url(/Fonts/poppinsExtralight.ttf) format("truetype");
+}
+@font-face {
+  font-family: poppinsThin;
+  /* font-weight: 900; */
+  src: url(/Fonts/poppinsThin.ttf) format("truetype");
 }

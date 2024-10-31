@@ -23,7 +23,7 @@ export default function Hero({
                 <p className="text-lg sm:text-xl md:text-2xl text-white text-shadow">
                     {intro}
                 </p>
-                <button className="bg-teal-400 text-white px-6 py-2 mt-2 rounded-full hover:bg-teal-600 transition-colors">
+                <button className="bg-gray-700 text-white px-6 py-2 mt-2 rounded-lg hover:bg-gray-900 transition-colors">
                     Read More
                 </button>
             </div>

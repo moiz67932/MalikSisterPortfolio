@@ -13,6 +13,8 @@ module.exports = {
       },
       fontFamily: {
         CodeLight: ["codelight", "serif"],
+        poppinsExtraLight: ["poppinExtraLight", "serif"],
+        poppinsThin: ["poppinsThin", "serif"],
       },
     },
   },
