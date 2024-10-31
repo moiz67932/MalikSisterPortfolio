@@ -6,7 +6,7 @@ const ServiceCard = ({ title, description, icon: Icon, dark }) => (
         {Icon && <Icon className={`w-12 h-12 mb-4 ${dark ? 'text-white' : 'text-gray-900'}`} />}
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="mb-4">{description}</p>
-        <a href="#" className={`inline-flex items-center ${dark ? 'text-white' : 'text-gray-900'}`}>
+        <a href="/comingSoon" className={`inline-flex items-center ${dark ? 'text-white' : 'text-gray-900'}`}>
             READ MORE
             <MoreHorizontal className="ml-2" />
         </a>

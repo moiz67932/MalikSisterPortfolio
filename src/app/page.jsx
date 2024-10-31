@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <div className="bg-white font-poppinsExtraLight">
       {/* <SideBarSocialMedia /> */}
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Welcome />
       <Services />
       <Projects />
       {/* <Testimonials /> */}
       <ContactForm />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
