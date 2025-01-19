@@ -7,18 +7,29 @@ import Services from "@/components/services";
 import SideBarSocialMedia from "@/components/sideBar";
 import Testimonials from "@/components/Testimonial";
 import Welcome from "@/components/Welcome";
+import dynamic from 'next/dynamic';
 
 export default function Home() {
   return (
     <div className="bg-white font-poppinsExtraLight">
       {/* <SideBarSocialMedia /> */}
       {/* <Header /> */}
-      <Hero />
-      <Welcome />
-      <Services />
-      <Projects />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="welcome">
+        <Welcome />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
       {/* <Testimonials /> */}
-      <ContactForm />
+      <div id="contact">
+        <ContactForm />
+      </div>
       {/* <Footer /> */}
     </div>
   );

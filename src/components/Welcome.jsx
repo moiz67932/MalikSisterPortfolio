@@ -4,15 +4,15 @@ import Link from 'next/link'
 
 export default function Welcome() {
     return (
-        <div id='about' className="container mx-auto px-4 py-12">
-            <div className="flex flex-col items-center justify-center md:flex-row gap-8">
-                <div className="md:w-1/4 ">
+        <div id='about' className="container mx-auto px-4 py-12 mt-20">
+            <div className="flex flex-col items-center justify-center md:flex-row gap-8 ">
+                <div className="md:w-1/4 motion-translate-y-in-100 motion-duration-2000">
                     <Image
                         src="/Images/Project2.jpg"
                         alt="Modern multi-story glass building"
                         width={400}
                         height={600}
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover "
                     />
                 </div>
                 <div className="md:w-1/2 space-y-6">

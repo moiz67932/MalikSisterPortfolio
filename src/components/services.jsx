@@ -43,8 +43,8 @@ export default function Services() {
 
     return (
         <div id='services' className="container mx-auto px-4 py-16">
-            <div className="text-center mb-12">
-                <span className="text-sm uppercase text-gray-500 mb-2 block">OUR SERVICES</span>
+            <div className="text-center mb-12 motion-translate-y-in-100 motion-duration-2000">
+                <span className="text-sm uppercase text-gray-500 mb-2 block ">OUR SERVICES</span>
                 <h2 className="text-4xl font-bold text-gray-700">What Can We Offer</h2>
                 <div className="w-16 h-1 bg-gray-900 mx-auto mt-4"></div>
             </div>
