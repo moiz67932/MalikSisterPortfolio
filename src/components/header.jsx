@@ -1,31 +1,95 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-// import logo from '../../public/Images/logo2.jpg'
+import React from 'react';
+import Link from 'next/link';
 
 export default function Header() {
     return (
-        // Change this header to transparent header and text color to black on normal and bold on hover. Also capitalize the text
-        <div className="absolute w-full top-0 z-10">
-            <header className="bg-transparent text-gray-900 py-4">
-                <div className="flex container mx-auto px-4 justify-between items-center">
-                    <Link href="/" className="text-3xl font-bold flex items-center gap-5">
-                        {/* <span><Image src={logo} width={40} alt='CurveAngle Logo' /></span> */}
-                        <span>
-                            CurveAngle
-                        </span>
+        <div className="fixed w-full top-0 z-10 bg-black">
+            <header className="container mx-auto px-6 py-4">
+                <div className="flex justify-between items-center">
+                    {/* Logo */}
+                    <Link href="/" className="text-white text-2xl font-bold tracking-wide">
+                        INNER
                     </Link>
+
+                    {/* Navigation */}
                     <nav>
-                        <ul className="flex space-x-6 uppercase text-md font-semibold">
-                            <li><Link href="/" className="hover:text-gray-400">Home</Link></li>
-                            <li><Link href="#about" className="hover:text-gray-400">About</Link></li>
-                            <li><Link href="#services" className="hover:text-gray-400">Services</Link></li>
-                            <li><Link href="#portfolio" className="hover:text-gray-400">Portfolio</Link></li>
-                            <li><Link href="#contact" className="hover:text-gray-400">Contact</Link></li>
+                        <ul className="flex space-x-8 text-white uppercase text-sm font-medium">
+                            <li className="relative group">
+                                <Link href="/" className="hover:text-gray-400">
+                                    Home
+                                </Link>
+                            </li>
+                            <li className="relative group">
+                                <Link href="#about" className="hover:text-gray-400">
+                                    About Us
+                                </Link>
+                            </li>
+                            <li className="relative group">
+                                <Link href="#services" className="hover:text-gray-400">
+                                    Services
+                                </Link>
+                            </li>
+                            <li className="relative group">
+                                <Link href="#projects" className="hover:text-gray-400 flex items-center">
+                                    Projects
+                                    <span className="ml-1">▼</span>
+                                </Link>
+                                {/* Dropdown */}
+                                <ul className="absolute hidden group-hover:block bg-black text-white text-sm space-y-2 mt-2 p-2 shadow-lg">
+                                    <li>
+                                        <Link href="#project1" className="hover:text-gray-400">
+                                            Project 1
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#project2" className="hover:text-gray-400">
+                                            Project 2
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="relative group">
+                                <Link href="#pages" className="hover:text-gray-400 flex items-center">
+                                    Pages
+                                    <span className="ml-1">▼</span>
+                                </Link>
+                                {/* Dropdown */}
+                                <ul className="absolute hidden group-hover:block bg-black text-white text-sm space-y-2 mt-2 p-2 shadow-lg">
+                                    <li>
+                                        <Link href="#page1" className="hover:text-gray-400">
+                                            Page 1
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#page2" className="hover:text-gray-400">
+                                            Page 2
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="relative group">
+                                <Link href="#contact" className="hover:text-gray-400 flex items-center">
+                                    Contact
+                                    <span className="ml-1">▼</span>
+                                </Link>
+                                {/* Dropdown */}
+                                <ul className="absolute hidden group-hover:block bg-black text-white text-sm space-y-2 mt-2 p-2 shadow-lg">
+                                    <li>
+                                        <Link href="#email" className="hover:text-gray-400">
+                                            Email
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#location" className="hover:text-gray-400">
+                                            Location
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-        </div>
-    )
+        </div>
+    );
 }
