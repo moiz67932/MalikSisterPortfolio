@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 export default function Header() {
     return (
         <div className="fixed w-full top-0 z-10 bg-black">
